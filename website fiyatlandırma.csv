@@ -1,0 +1,43 @@
+,,,,,,,
+,Özellik / Hizmet Modeli,1. Dijital Kartvizit(Statik),2. Akıllı İşletme(KOBİ),3. Büyüme Odaklı(Dijital Pazarlama),4. Bağımsız Sunucu(Veri Benim),5. İnteraktif Vitrin(Özel 3D),6. Akıllı E-Ticaret(ikas Ortaklığı)
+,Sayfa Yapısı,Tek Sayfa (One-Page),Çoklu Sayfa,Çoklu Sayfa,İstek Doğrultusunda,Özel 3D / WebGL,Dinamik E-Ticaret
+,Mobil Uyumlu Tasarım,✔️,✔️,✔️,✔️,✔️,✔️
+,Domain & Hosting (1. Yıl),✔️ (Bizden),✔️ (Bizden),✔️ (Bizden),❌ (Müşteri Öder),✔️ (Bizden),✔️ (Bulut Altyapı)
+,Google Search Console Kaydı,✔️,✔️,✔️,✔️,✔️,✔️
+,İletişim Formu / Ürün Sepeti,✔️,✔️,✔️,✔️,✔️,✔️ (Gelişmiş Sepet)
+,Google Haritalar Kurum Kaydı,❌,✔️,✔️,✔️,✔️,✔️
+,Veritabanı Altyapısı,❌,✔️ (Merkezi Supabase),✔️ (Merkezi Supabase),✔️ (İzole Kurulum),✔️,✔️ (ikas Altyapısı)
+,Özel Müşteri Yönetim Paneli,❌,✔️ (Cebir CRM),✔️ (Cebir CRM),✔️ (İzole CRM),✔️,✔️ (ikas Paneli)
+,Veri Dışa Aktarma (Excel/CSV),❌,✔️,✔️,✔️,✔️,✔️
+,Google Ads Kampanya Kurulumu,❌,❌,✔️,❌,❌,❌ (Opsiyonel)
+,Aylık Reklam Optimizasyonu,❌,❌,✔️ (%10 Komisyon),❌,❌,❌ (Opsiyonel)
+,KVKK & Çerez Yönetimi,✔️ (Form Altı Checkbox),✔️ (Form Altı Checkbox),✔️ (Kapsamlı Pop-up),Paket İçeriğine Göre,✔️ (Kapsamlı Pop-up),✔️ (Kapsamlı Pop-up)
+,3D Model & WebGL Simülasyon,❌,❌,❌,❌,✔️,❌
+,Fiziksel Barkodlu Kartvizit,❌,✔️ (100 Adet Hediye),✔️ (100 Adet Hediye),✔️ (100 Adet Hediye),✔️ (100 Adet Hediye),❌
+,NET FİYAT (KDV Hariç),6.000 ₺,10.000 ₺,12.000 ₺,"Statik: 6.000 ₺
+
+Dinamik: 12.000 ₺",35.000 ₺ – 60.000 ₺+,20.000 ₺
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,İlave Hizmet Adı,Açıklama,,,Fiyatlandırma Modeli,Fiyatlandırma Modeli,
+,Yapay Zeka Chatbot Entegrasyonu,"Sitedeki veya e-ticaret panelindeki verilerle eğitilmiş, 7/24 hizmet veren yapay zeka asistanı. (İşin içine veri işleme girdiği için yasal zorunluluk olan Kapsamlı KVKK ve Çerez Pop-up altyapısı bu pakete hediye olarak dahil edilmiştir).",,,"Kurulum: 5.500 ₺ + KDV
+
+Aylık Bakım/Token: 1.000 ₺","Kurulum: 5.500 ₺ + KDV
+
+Aylık Bakım/Token: 1.000 ₺",
+,Çoklu Dil Desteği (Lokalizasyon),"İngilizce, Almanca vb. ek dil seçenekleri (Yapay zeka ön çevirisi ve altyapı kurulumu dahil).",,,Dil Başına: 3.000 ₺ + KDV,Dil Başına: 3.000 ₺ + KDV,
+,Kurumsal E-Posta Kurulumu,"Kurumsal mail altyapısının açılması ve maillerin spama düşmesini engelleyen güvenlik ayarlarının (SPF, DKIM, DMARC) yapılması.",,,Tek Seferlik: 1.500 ₺ + KDV,Tek Seferlik: 1.500 ₺ + KDV,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,📌 Önemli Sözleşme ve Hizmet Notları,,,,,,
+,"Fiyatlandırma ve Vergiler: Tabloda belirtilen tüm fiyatlar net olup, faturalandırma aşamasında güncel yasal KDV oranı eklenecektir.",,,,,,
+,"Yenileme Bedelleri (2. Yıl ve Sonrası): 1, 2, 3 ve 5 numaralı paketlerde ilk yıl domain ve hosting ücretsizdir. İkinci yıldan itibaren sunucu barındırma, altyapı güncellenmesi ve (varsa) merkezi CRM panel lisans kullanımı için yıllık yenileme/bakım bedeli faturalandırılır.",,,,,,
+,"Bağımsız Sunucu (Veri Benim) Şartları ve Fiyatlandırma Mantığı: Bu pakette domain, hosting ve e-posta altyapı mülkiyeti tamamen müşteriye aittir ve maliyetler müşterinin kendi kartından tahsil edilir. Merkezi paylaşımlı altyapımız (Akıllı İşletme Paketi) ""tak-çalıştır"" otomasyonlarına sahipken; Bağımsız Sunucu paketinde standart ekosistemimizin dışına çıkılmaktadır. Firmanıza ait sunucuda sıfırdan izole bir veritabanı mimarisi kurulması, API güvenlik (SSL/CORS) yapılandırmaları ve projeye özel manuel yayına alma işlemlerinin gerektirdiği ekstra mühendislik mesaisi nedeniyle hizmet bedeli sabit tutulmuştur. Fatura edilen tutar, sunucu donanımını değil, size özel harcanan butik geliştirme ve mimari kurulum işçiliğini kapsamaktadır.",,,,,,
+,"Google Ads Süreci: 3 numaralı pakette harcanacak Google Ads tıklama bütçesi doğrudan müşteriye aittir. %10 ajans komisyonu, aylık harcanan bütçe üzerinden hesaplanarak; kampanya yönetimi, negatif kelime optimizasyonu ve dönüşüm takibi hizmet bedeli olarak her ayın sonunda ayrıca fatura edilir. Reklamların dondurulması durumunda sitenin sunucu barındırma hizmeti devam eder ancak komisyon bedeli yansıtılmaz.",,,,,,

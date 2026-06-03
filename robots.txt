@@ -1,0 +1,8 @@
+# robots.txt for https://www.cebirproje.com/
+
+User-agent: *
+Allow: /
+Disallow: /test-3d.html
+Disallow: /images/temp/
+
+Sitemap: https://www.cebirproje.com/sitemap.xml

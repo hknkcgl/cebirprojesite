@@ -243,7 +243,7 @@ main {
     left: 0;
     width: 100%;
     height: 150%; /* Extra height to allow for parallax movement */
-    background: url('images/parallax-bg.jpg') no-repeat center center;
+    background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
     background-size: cover;
     z-index: -1;
     transform: translateZ(0);
@@ -946,5 +946,340 @@ footer {
     
     .project-card {
         width: 100%;
+    }
+}
+
+/* 3D Logo Container */
+#logo-3d-container {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 250px;
+    height: 250px;
+    z-index: 999;
+    pointer-events: none;
+}
+
+#logo-3d-canvas {
+    width: 100%;
+    height: 100%;
+}
+
+/* Content wrapper shift for desktop */
+.content-wrapper {
+    margin-left: 0;
+    transition: margin-left 0.3s ease;
+}
+
+@media (min-width: 1024px) {
+    .content-wrapper {
+        margin-left: 290px;
+    }
+    
+    #logo-3d-container {
+        display: block;
+    }
+}
+
+@media (max-width: 1023px) {
+    #logo-3d-container {
+        display: none;
+    }
+}
+
+/* ============================================
+   PRICING SECTION STYLES
+   ============================================ */
+.pricing {
+    padding: 4rem 2rem;
+    position: relative;
+    z-index: 10;
+}
+
+.tab-help-text {
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 0.5rem;
+    display: none;
+    text-align: center;
+}
+
+.pricing-tabs-container {
+    display: none;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.pricing-tabs {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    padding: 0.5rem;
+    background-color: var(--secondary-color);
+    border-radius: 50px;
+    width: fit-content;
+    margin: 0 auto;
+    max-width: 100%;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.pricing-tabs::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, Opera */
+}
+
+.pricing-tab-btn {
+    background: none;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(0, 0, 0, 0.6);
+    border-radius: 30px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: var(--transition);
+}
+
+.pricing-tab-btn.active {
+    background-color: var(--primary-color);
+    color: var(--white);
+    box-shadow: 0 2px 8px rgba(215, 107, 58, 0.3);
+}
+
+.pricing-table-wrapper {
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    margin-bottom: 4rem;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Inter', sans-serif;
+}
+
+.pricing-table th, .pricing-table td {
+    padding: 1.2rem 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    font-size: 0.95rem;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.pricing-table th {
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Feature Name Column (Sticky) */
+.pricing-table .sticky-col {
+    position: sticky;
+    left: 0;
+    background-color: var(--white);
+    z-index: 5;
+    text-align: left;
+    font-weight: 600;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.02);
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.pricing-table th.sticky-col {
+    background-color: var(--secondary-color);
+    z-index: 6;
+}
+
+/* Row Hover Effect */
+.pricing-table tbody tr:hover {
+    background-color: rgba(215, 107, 58, 0.02);
+}
+
+.pricing-table tbody tr:hover .sticky-col {
+    background-color: #fafbfc;
+}
+
+/* Badges for Yes/No */
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.badge-yes {
+    background-color: rgba(46, 117, 89, 0.1);
+    color: #2e7559;
+}
+
+.badge-no {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/* Price Row Styles */
+.price-row {
+    background-color: rgba(215, 107, 58, 0.03);
+}
+
+.price-amount {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.price-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* Additional Services */
+.sub-section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: rgba(0, 0, 0, 0.85);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.additional-services-container {
+    margin-bottom: 4rem;
+}
+
+.additional-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.add-service-card {
+    background-color: var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+
+.add-service-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.add-service-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.add-service-card h4 {
+    font-size: 1.25rem;
+    color: rgba(0, 0, 0, 0.85);
+    margin-bottom: 0.8rem;
+}
+
+.add-service-card p {
+    font-size: 0.95rem;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 1.5;
+    flex-grow: 1;
+    margin-bottom: 1.5rem;
+}
+
+.add-service-price {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding-top: 1rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.add-service-price strong {
+    color: var(--primary-color);
+}
+
+/* Pricing Notes */
+.pricing-notes-container {
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    padding: 3rem 2rem;
+}
+
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.note-item h5 {
+    font-size: 1.05rem;
+    color: rgba(0, 0, 0, 0.85);
+    margin-bottom: 0.6rem;
+    position: relative;
+    padding-left: 0.8rem;
+}
+
+.note-item h5::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.3rem;
+    width: 4px;
+    height: 12px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+.note-item p {
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 1.6;
+}
+
+/* Responsive Table Styles (Mobile-First) */
+@media (max-width: 992px) {
+    .pricing-tabs-container {
+        display: block;
+    }
+    
+    .tab-help-text {
+        display: block;
+    }
+    
+    /* Hide all package columns by default on mobile */
+    .pricing-table .pkg-col {
+        display: none;
+    }
+    
+    /* Display the active package column */
+    .pricing-table .pkg-col.active {
+        display: table-cell;
+    }
+    
+    .pricing-table th, .pricing-table td {
+        padding: 1rem 0.8rem;
+    }
+    
+    .pricing-table .sticky-col {
+        min-width: 140px;
+        max-width: 170px;
+        word-wrap: break-word;
     }
 }

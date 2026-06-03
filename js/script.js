@@ -278,6 +278,53 @@ document.addEventListener('DOMContentLoaded', function() {
     // Background kod resimlerini yönet
     manageBackgroundCodeImages();
     
+    // Pricing Tabs Navigation
+    const pricingTabBtns = document.querySelectorAll('.pricing-tab-btn');
+    const pricingCols = document.querySelectorAll('.pricing-table .pkg-col');
+    
+    pricingTabBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            // Remove active class from all buttons
+            pricingTabBtns.forEach(b => {
+                b.classList.remove('active');
+                b.setAttribute('aria-selected', 'false');
+            });
+            
+            // Add active class to clicked button
+            this.classList.add('active');
+            this.setAttribute('aria-selected', 'true');
+            
+            const selectedPackage = this.getAttribute('data-package');
+            
+            // Toggle visibility in table columns
+            pricingCols.forEach(col => {
+                if (col.classList.contains(selectedPackage)) {
+                    col.classList.add('active');
+                } else {
+                    col.classList.remove('active');
+                }
+            });
+        });
+    });
+
+    // Mobile Hamburger Menu Toggle
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const navMenu = document.querySelector('.nav-menu');
+    const navLinks = document.querySelectorAll('.nav-menu a');
+    
+    if (hamburgerMenu && navMenu) {
+        hamburgerMenu.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+        });
+        
+        // Close menu when a link is clicked
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+            });
+        });
+    }
+
     // Window resize handling
     window.addEventListener('resize', function() {
         const existingLogos = document.querySelectorAll('.background-logo');

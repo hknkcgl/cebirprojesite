@@ -3,26 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CEBİR PROJE VE BİLİŞİM - Mekanik Tesisat ve Yazılım Çözümleri">
+    <meta name="description" content="Cebir Mühendislik Proje ve Bilişim - Mekanik tesisat ruhsat projeleri (sıhhi tesisat, HVAC, kazan dairesi, soğutma) ve yapay zeka destekli yazılım, CRM, web tasarım çözümleri.">
+    <meta name="keywords" content="cebir mühendislik, mekanik tesisat projesi, sıhhi tesisat, kazan dairesi projesi, hvac projesi, vrf fancoil projelendirme, yapay zeka crm, web tasarım çanakkale, çorlu mühendislik">
+    <meta name="author" content="Cebir Mühendislik Proje ve Bilişim">
     <title>CEBİR MÜHENDİSLİK PROJE VE BİLİŞİM | Mekanik Tesisat ve Yazılım Çözümleri</title>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.cebirproje.com/">
+
+    <!-- Favicons -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.cebirproje.com/">
+    <meta property="og:title" content="CEBİR MÜHENDİSLİK PROJE VE BİLİŞİM | Mekanik Tesisat ve Yazılım Çözümleri">
+    <meta property="og:description" content="Mekanik tesisat ruhsat projeleri, HVAC, sıhhi tesisat çözümleri ile yapay zeka destekli yazılım, CRM ve web tasarım hizmetleri.">
+    <meta property="og:image" content="https://www.cebirproje.com/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.cebirproje.com/">
+    <meta name="twitter:title" content="CEBİR MÜHENDİSLİK PROJE VE BİLİŞİM | Mekanik Tesisat ve Yazılım Çözümleri">
+    <meta name="twitter:description" content="Mekanik tesisat ruhsat projeleri, HVAC, sıhhi tesisat çözümleri ile yapay zeka destekli yazılım, CRM ve web tasarım hizmetleri.">
+    <meta name="twitter:image" content="https://www.cebirproje.com/images/logo.png">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!--<link href="https://fonts.googleapis.com/css2?family=Hauora+Sans:wght@400;700&display=swap" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Cebir Mühendislik Proje ve Bilişim",
+      "image": "https://www.cebirproje.com/images/logo.png",
+      "@id": "https://www.cebirproje.com/#organization",
+      "url": "https://www.cebirproje.com/",
+      "telephone": "+905435533717",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Esenler Mah. Adnan Menderes Cad. No: 2 /23 İç Kapı No: 21",
+        "addressLocality": "Merkez",
+        "addressRegion": "Çanakkale",
+        "postalCode": "17100",
+        "addressCountry": "TR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.157375,
+        "longitude": 26.424005
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.cebirproje.com/vcard.html"
+      ]
+    }
+    </script>
 </head>
 <body>
+    <div id="logo-3d-container">
+        <canvas id="logo-3d-canvas"></canvas>
+    </div>
     <header role="banner">
         <div class="header-container">
             <div class="logo">
-                <img src="images/logo.png" alt="CEBİR PROJE VE BİLİŞİM Logo" width="150" height="50" class="logo-animation">
+                <img src="images/logo.png" alt="Cebir Mühendislik Proje ve Bilişim Logo" width="150" height="50" class="logo-animation">
                 <h1>CEBİR<span>MÜHENDİSLİK</span></h1>
             </div>
             <nav role="navigation" aria-label="Main navigation" class="nav-menu">
                 <ul>
                     <li><a href="#hero">Ana Sayfa</a></li>
                     <li><a href="#services">Hizmetler</a></li>
+                    <li><a href="#pricing">Fiyatlandırma</a></li>
                     <!--<li><a href="#projects">Projeler</a></li>-->
                     <li><a href="#contact">İletişim</a></li>
                 </ul>
@@ -35,7 +105,7 @@
         </div>
     </header>
 
-    <main>
+    <main class="content-wrapper">
         <!-- Hero Section -->
         <section id="hero" class="hero" role="banner">
             <div class="parallax-bg" id="hero-parallax" aria-hidden="true"></div>
@@ -54,7 +124,7 @@
                     </ul>
                 </div>
                 <div class="hero-image">
-                    <img src="images/mechanical-project.jpg" alt="Mechanical Installation Project representing our mechanical installation services" id="mechanical-image">
+                    <img src="images/mechanical-project.jpg" alt="Cebir Mühendislik Mekanik Tesisat Projelendirme Hizmetleri" id="mechanical-image">
                 </div>
             </div>
         </section>
@@ -63,7 +133,7 @@
         <section class="secondary">
             <div class="secondary-content">
                 <div class="secondary-image">
-                    <img src="images/software-solution.jpg" alt="Software Solutions representing our software services" id="software-image">
+                    <img src="images/software-solution.jpg" alt="Cebir Bilişim Yapay Zeka Destekli CRM ve Özel Yazılım Çözümleri" id="software-image">
                 </div>
                 <div class="secondary-text">
                     <h2>Yazılım Çözümleri</h2>
@@ -101,8 +171,8 @@
                             <h4 id="mech-card-4">HVAC - VRF - Fancoil Projelendirme</h4>
                             <p>Konforlu iç mekanlar için havalandırma ve iklimlendirme sistemleri.</p>
                         </div>
-						<div class="service-card" role="article" aria-labelledby="mech-card-4">
-                            <h4 id="mech-card-4">Soğutma - klima Tesisatı Projelendirme</h4>
+						<div class="service-card" role="article" aria-labelledby="mech-card-5">
+                            <h4 id="mech-card-5">Soğutma - klima Tesisatı Projelendirme</h4>
                             <p>Konforlu iç mekanlar için havalandırma ve iklimlendirme sistemleri.</p>
                         </div>
                     </div>
@@ -123,6 +193,244 @@
                             <h4 id="soft-card-3">Özel Yazılım Çözümleri</h4>
                             <p>İşletmenizin özel ihtiyaçlarına göre geliştirilmiş yazılım çözümleri.</p>
                         </div>
+                        <div class="service-card" role="article" aria-labelledby="soft-card-4">
+                            <h4 id="soft-card-4">Web Sitesi Tasarımı ve Geliştirme</h4>
+                            <p>İşletmeniz için modern, hızlı, SEO uyumlu ve mobil öncelikli web siteleri.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section - Web Tasarım Fiyatlandırma -->
+        <section id="pricing" class="pricing" aria-labelledby="pricing-heading">
+            <h2 class="section-title" id="pricing-heading">Web Tasarım Fiyatlandırma</h2>
+            
+            <!-- Mobile View Package Tabs Selector -->
+            <div class="pricing-tabs-container">
+                <p class="tab-help-text">Paket detaylarını görmek için seçin:</p>
+                <div class="pricing-tabs" role="tablist">
+                    <button class="pricing-tab-btn active" role="tab" aria-selected="true" data-package="pkg-1">Dijital Kartvizit</button>
+                    <button class="pricing-tab-btn" role="tab" aria-selected="false" data-package="pkg-2">Akıllı İşletme</button>
+                    <button class="pricing-tab-btn" role="tab" aria-selected="false" data-package="pkg-3">Büyüme Odaklı</button>
+                    <button class="pricing-tab-btn" role="tab" aria-selected="false" data-package="pkg-4">Bağımsız Sunucu</button>
+                    <button class="pricing-tab-btn" role="tab" aria-selected="false" data-package="pkg-5">İnteraktif Vitrin</button>
+                    <button class="pricing-tab-btn" role="tab" aria-selected="false" data-package="pkg-6">Akıllı E-Ticaret</button>
+                </div>
+            </div>
+
+            <!-- Table Wrapper -->
+            <div class="pricing-table-wrapper">
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th class="feature-header sticky-col">Özellik / Hizmet Modeli</th>
+                            <th class="pkg-header pkg-col pkg-1 active" data-package="pkg-1">1. Dijital Kartvizit (Statik)</th>
+                            <th class="pkg-header pkg-col pkg-2" data-package="pkg-2">2. Akıllı İşletme (KOBİ)</th>
+                            <th class="pkg-header pkg-col pkg-3" data-package="pkg-3">3. Büyüme Odaklı (Dijital Pazarlama)</th>
+                            <th class="pkg-header pkg-col pkg-4" data-package="pkg-4">4. Bağımsız Sunucu (Veri Benim)</th>
+                            <th class="pkg-header pkg-col pkg-5" data-package="pkg-5">5. İnteraktif Vitrin (Özel 3D)</th>
+                            <th class="pkg-header pkg-col pkg-6" data-package="pkg-6">6. Akıllı E-Ticaret (ikas Ortaklığı)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="feature-name sticky-col">Sayfa Yapısı</td>
+                            <td class="pkg-value pkg-col pkg-1 active">Tek Sayfa (One-Page)</td>
+                            <td class="pkg-value pkg-col pkg-2">Çoklu Sayfa</td>
+                            <td class="pkg-value pkg-col pkg-3">Çoklu Sayfa</td>
+                            <td class="pkg-value pkg-col pkg-4">İstek Doğrultusunda</td>
+                            <td class="pkg-value pkg-col pkg-5">Özel 3D / WebGL</td>
+                            <td class="pkg-value pkg-col pkg-6">Dinamik E-Ticaret</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name sticky-col">Mobil Uyumlu Tasarım</td>
+                            <td class="pkg-value pkg-col pkg-1 active"><span class="badge badge-yes">✔️ Evet</span></td>
+                            <td class="pkg-value pkg-col pkg-2"><span class="badge badge-yes">✔️ Evet</span></td>
+                            <td class="pkg-value pkg-col pkg-3"><span class="badge badge-yes">✔️ Evet</span></td>
+                            <td class="pkg-value pkg-col pkg-4"><span class="badge badge-yes">✔️ Evet</span></td>
+                            <td class="pkg-value pkg-col pkg-5"><span class="badge badge-yes">✔️ Evet</span></td>
+                            <td class="pkg-value pkg-col pkg-6"><span class="badge badge-yes">✔️ Evet</span></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name sticky-col">Domain & Hosting (1. Yıl)</td>
+                            <td class="pkg-value pkg-col pkg-1 active"><span class="badge badge-yes">✔️ Bizden</span></td>
+                            <td class="pkg-value pkg-col pkg-2"><span class="badge badge-yes">✔️ Bizden</span></td>
+                            <td class="pkg-value pkg-col pkg-3"><span class="badge badge-yes">✔️ Bizden</span></td>
+                            <td class="pkg-value pkg-col pkg-4"><span class="badge badge-no">❌ Müşteri Öder</span></td>
+                            <td class="pkg-value pkg-col pkg-5"><span class="badge badge-yes">✔️ Bizden</span></td>
+                            <td class="pkg-value pkg-col pkg-6"><span class="badge badge-yes">✔️ Bulut Altyapı</span></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name sticky-col">Google Search Console Kaydı</td>
+                            <td class="pkg-value pkg-col pkg-1 active"><span class="badge badge-yes">✔️ Evet</span></td>
+                            <td class="pkg-value pkg-col pkg-2"><span class="badge badge-yes">✔️ Evet</span></td>
+                            <td class="pkg-value pkg-col pkg-3"><span class="badge badge-yes">✔️ Evet</span></td>
+                            <td class="pkg-value pkg-col pkg-4"><span class="badge badge-yes">✔️ Evet</span></td>
+                            <td class="pkg-value pkg-col pkg-5"><span class="badge badge-yes">✔️ Evet</span></td>
+                            <td class="pkg-value pkg-col pkg-6"><span class="badge badge-yes">✔️ Evet</span></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name sticky-col">İletişim Formu / Ürün Sepeti</td>
+                            <td class="pkg-value pkg-col pkg-1 active"><span class="badge badge-yes">✔️ Evet</span></td>
+                            <td class="pkg-value pkg-col pkg-2"><span class="badge badge-yes">✔️ Evet</span></td>
+                            <td class="pkg-value pkg-col pkg-3"><span class="badge badge-yes">✔️ Evet</span></td>
+                            <td class="pkg-value pkg-col pkg-4"><span class="badge badge-yes">✔️ Evet</span></td>
+                            <td class="pkg-value pkg-col pkg-5"><span class="badge badge-yes">✔️ Evet</span></td>
+                            <td class="pkg-value pkg-col pkg-6"><span class="badge badge-yes">✔️ Gelişmiş Sepet</span></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name sticky-col">Google Haritalar Kurum Kaydı</td>
+                            <td class="pkg-value pkg-col pkg-1 active"><span class="badge badge-no">❌ Hayır</span></td>
+                            <td class="pkg-value pkg-col pkg-2"><span class="badge badge-yes">✔️ Evet</span></td>
+                            <td class="pkg-value pkg-col pkg-3"><span class="badge badge-yes">✔️ Evet</span></td>
+                            <td class="pkg-value pkg-col pkg-4"><span class="badge badge-yes">✔️ Evet</span></td>
+                            <td class="pkg-value pkg-col pkg-5"><span class="badge badge-yes">✔️ Evet</span></td>
+                            <td class="pkg-value pkg-col pkg-6"><span class="badge badge-yes">✔️ Evet</span></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name sticky-col">Veritabanı Altyapısı</td>
+                            <td class="pkg-value pkg-col pkg-1 active"><span class="badge badge-no">❌ Hayır</span></td>
+                            <td class="pkg-value pkg-col pkg-2"><span class="badge badge-yes">✔️ Merkezi Supabase</span></td>
+                            <td class="pkg-value pkg-col pkg-3"><span class="badge badge-yes">✔️ Merkezi Supabase</span></td>
+                            <td class="pkg-value pkg-col pkg-4"><span class="badge badge-yes">✔️ İzole Kurulum</span></td>
+                            <td class="pkg-value pkg-col pkg-5"><span class="badge badge-yes">✔️ Evet</span></td>
+                            <td class="pkg-value pkg-col pkg-6"><span class="badge badge-yes">✔️ ikas Altyapısı</span></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name sticky-col">Özel Müşteri Yönetim Paneli</td>
+                            <td class="pkg-value pkg-col pkg-1 active"><span class="badge badge-no">❌ Hayır</span></td>
+                            <td class="pkg-value pkg-col pkg-2"><span class="badge badge-yes">✔️ Cebir CRM</span></td>
+                            <td class="pkg-value pkg-col pkg-3"><span class="badge badge-yes">✔️ Cebir CRM</span></td>
+                            <td class="pkg-value pkg-col pkg-4"><span class="badge badge-yes">✔️ İzole CRM</span></td>
+                            <td class="pkg-value pkg-col pkg-5"><span class="badge badge-yes">✔️ Evet</span></td>
+                            <td class="pkg-value pkg-col pkg-6"><span class="badge badge-yes">✔️ ikas Paneli</span></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name sticky-col">Veri Dışa Aktarma (Excel/CSV)</td>
+                            <td class="pkg-value pkg-col pkg-1 active"><span class="badge badge-no">❌ Hayır</span></td>
+                            <td class="pkg-value pkg-col pkg-2"><span class="badge badge-yes">✔️ Evet</span></td>
+                            <td class="pkg-value pkg-col pkg-3"><span class="badge badge-yes">✔️ Evet</span></td>
+                            <td class="pkg-value pkg-col pkg-4"><span class="badge badge-yes">✔️ Evet</span></td>
+                            <td class="pkg-value pkg-col pkg-5"><span class="badge badge-yes">✔️ Evet</span></td>
+                            <td class="pkg-value pkg-col pkg-6"><span class="badge badge-yes">✔️ Evet</span></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name sticky-col">Google Ads Kampanya Kurulumu</td>
+                            <td class="pkg-value pkg-col pkg-1 active"><span class="badge badge-no">❌ Hayır</span></td>
+                            <td class="pkg-value pkg-col pkg-2"><span class="badge badge-no">❌ Hayır</span></td>
+                            <td class="pkg-value pkg-col pkg-3"><span class="badge badge-yes">✔️ Evet</span></td>
+                            <td class="pkg-value pkg-col pkg-4"><span class="badge badge-no">❌ Hayır</span></td>
+                            <td class="pkg-value pkg-col pkg-5"><span class="badge badge-no">❌ Hayır</span></td>
+                            <td class="pkg-value pkg-col pkg-6">❌ (Opsiyonel)</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name sticky-col">Aylık Reklam Optimizasyonu</td>
+                            <td class="pkg-value pkg-col pkg-1 active"><span class="badge badge-no">❌ Hayır</span></td>
+                            <td class="pkg-value pkg-col pkg-2"><span class="badge badge-no">❌ Hayır</span></td>
+                            <td class="pkg-value pkg-col pkg-3">✔️ %10 Komisyon</td>
+                            <td class="pkg-value pkg-col pkg-4"><span class="badge badge-no">❌ Hayır</span></td>
+                            <td class="pkg-value pkg-col pkg-5"><span class="badge badge-no">❌ Hayır</span></td>
+                            <td class="pkg-value pkg-col pkg-6">❌ (Opsiyonel)</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name sticky-col">KVKK & Çerez Yönetimi</td>
+                            <td class="pkg-value pkg-col pkg-1 active">Form Altı Checkbox</td>
+                            <td class="pkg-value pkg-col pkg-2">Form Altı Checkbox</td>
+                            <td class="pkg-value pkg-col pkg-3">Kapsamlı Pop-up</td>
+                            <td class="pkg-value pkg-col pkg-4">Paket İçeriğine Göre</td>
+                            <td class="pkg-value pkg-col pkg-5">Kapsamlı Pop-up</td>
+                            <td class="pkg-value pkg-col pkg-6">Kapsamlı Pop-up</td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name sticky-col">3D Model & WebGL Simülasyon</td>
+                            <td class="pkg-value pkg-col pkg-1 active"><span class="badge badge-no">❌ Hayır</span></td>
+                            <td class="pkg-value pkg-col pkg-2"><span class="badge badge-no">❌ Hayır</span></td>
+                            <td class="pkg-value pkg-col pkg-3"><span class="badge badge-no">❌ Hayır</span></td>
+                            <td class="pkg-value pkg-col pkg-4"><span class="badge badge-no">❌ Hayır</span></td>
+                            <td class="pkg-value pkg-col pkg-5"><span class="badge badge-yes">✔️ Evet</span></td>
+                            <td class="pkg-value pkg-col pkg-6"><span class="badge badge-no">❌ Hayır</span></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name sticky-col">Fiziksel Barkodlu Kartvizit</td>
+                            <td class="pkg-value pkg-col pkg-1 active"><span class="badge badge-no">❌ Hayır</span></td>
+                            <td class="pkg-value pkg-col pkg-2">✔️ 100 Adet Hediye</td>
+                            <td class="pkg-value pkg-col pkg-3">✔️ 100 Adet Hediye</td>
+                            <td class="pkg-value pkg-col pkg-4">✔️ 100 Adet Hediye</td>
+                            <td class="pkg-value pkg-col pkg-5">✔️ 100 Adet Hediye</td>
+                            <td class="pkg-value pkg-col pkg-6"><span class="badge badge-no">❌ Hayır</span></td>
+                        </tr>
+                        <tr class="price-row">
+                            <td class="feature-name sticky-col">NET FİYAT (KDV Hariç)</td>
+                            <td class="pkg-value pkg-col pkg-1 active"><div class="price-amount">6.000 ₺</div></td>
+                            <td class="pkg-value pkg-col pkg-2"><div class="price-amount">10.000 ₺</div></td>
+                            <td class="pkg-value pkg-col pkg-3"><div class="price-amount">12.000 ₺</div></td>
+                            <td class="pkg-value pkg-col pkg-4">
+                                <div class="price-details">
+                                    <span>Statik: 6.000 ₺</span>
+                                    <span>Dinamik: 12.000 ₺</span>
+                                </div>
+                            </td>
+                            <td class="pkg-value pkg-col pkg-5"><div class="price-amount">35.000 ₺ – 60.000 ₺+</div></td>
+                            <td class="pkg-value pkg-col pkg-6"><div class="price-amount">20.000 ₺</div></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Additional Services (İlave Hizmetler) -->
+            <div class="additional-services-container">
+                <h3 class="sub-section-title">İlave Hizmetler</h3>
+                <div class="additional-services-grid">
+                    <div class="add-service-card">
+                        <div class="add-service-icon">🤖</div>
+                        <h4>Yapay Zeka Chatbot Entegrasyonu</h4>
+                        <p>Sitedeki veya e-ticaret panelindeki verilerle eğitilmiş, 7/24 hizmet veren yapay zeka asistanı. (İşin içine veri işleme girdiği için yasal zorunluluk olan Kapsamlı KVKK ve Çerez Pop-up altyapısı bu pakete hediye olarak dahil edilmiştir).</p>
+                        <div class="add-service-price">
+                            <span>Kurulum: <strong>5.500 ₺ + KDV</strong></span>
+                            <span>Aylık Bakım/Token: <strong>1.000 ₺ + KDV</strong></span>
+                        </div>
+                    </div>
+                    
+                    <div class="add-service-card">
+                        <div class="add-service-icon">🌐</div>
+                        <h4>Çoklu Dil Desteği (Lokalizasyon)</h4>
+                        <p>İngilizce, Almanca vb. ek dil seçenekleri (Yapay zeka ön çevirisi ve altyapı kurulumu dahil).</p>
+                        <div class="add-service-price">
+                            <span>Dil Başına: <strong>3.000 ₺ + KDV</strong></span>
+                        </div>
+                    </div>
+                    
+                    <div class="add-service-card">
+                        <div class="add-service-icon">📧</div>
+                        <h4>Kurumsal E-Posta Kurulumu</h4>
+                        <p>Kurumsal mail altyapısının açılması ve maillerin spama düşmesini engelleyen güvenlik ayarlarının (SPF, DKIM, DMARC) yapılması.</p>
+                        <div class="add-service-price">
+                            <span>Tek Seferlik: <strong>1.500 ₺ + KDV</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pricing Notes -->
+            <div class="pricing-notes-container">
+                <h3 class="sub-section-title">📌 Önemli Sözleşme ve Hizmet Notları</h3>
+                <div class="notes-grid">
+                    <div class="note-item">
+                        <h5>Fiyatlandırma ve Vergiler</h5>
+                        <p>Tabloda belirtilen tüm fiyatlar net olup, faturalandırma aşamasında güncel yasal KDV oranı eklenecektir.</p>
+                    </div>
+                    <div class="note-item">
+                        <h5>Yenileme Bedelleri (2. Yıl ve Sonrası)</h5>
+                        <p>1, 2, 3 ve 5 numaralı paketlerde ilk yıl domain ve hosting ücretsizdir. İkinci yıldan itibaren sunucu barındırma, altyapı güncellenmesi ve (varsa) merkezi CRM panel lisans kullanımı için yıllık yenileme/bakım bedeli faturalandırılır.</p>
+                    </div>
+                    <div class="note-item">
+                        <h5>Bağımsız Sunucu (Veri Benim) Şartları</h5>
+                        <p>Bu pakette domain, hosting ve e-posta altyapı mülkiyeti tamamen müşteriye aittir ve maliyetler müşterinin kendi kartından tahsil edilir. Merkezi paylaşımlı altyapımız (Akıllı İşletme Paketi) "tak-çalıştır" otomasyonlarına sahipken; Bağımsız Sunucu paketinde standart ekosistemimizin dışına çıkılmaktadır. Firmanıza ait sunucuda sıfırdan izole bir veritabanı mimarisi kurulması, API güvenlik (SSL/CORS) yapılandırmaları ve projeye özel manuel yayına alma işlemlerinin gerektirdiği ekstra mühendislik mesaisi nedeniyle hizmet bedeli sabit tutulmuştur. Fatura edilen tutar, sunucu donanımını değil, size özel harcanan butik geliştirme ve mimari kurulum işçiliğini kapsamaktadır.</p>
+                    </div>
+                    <div class="note-item">
+                        <h5>Google Ads Süreci</h5>
+                        <p>3 numaralı pakette harcanacak Google Ads tıklama bütçesi doğrudan müşteriye aittir. %10 ajans komisyonu, aylık harcanan bütçe üzerinden hesaplanarak; kampanya yönetimi, negatif kelime optimizasyonu ve dönüşüm takibi hizmet bedeli olarak her ayın sonunda ayrıca fatura edilir. Reklamların dondurulması durumunda sitenin sunucu barındırma hizmeti devam eder ancak komisyon bedeli yansıtılmaz.</p>
                     </div>
                 </div>
             </div>
@@ -175,7 +483,7 @@
                         <h3>WhatsApp - Telegram - Telefon ile Ulaşın</h3>
                         <p>+90 543 553 3717</p>
                         <p>info@cebirproje.com</p>
-                        <p>Kazımiye mh. Salih Omurtak Cd. No:16/C iç kapı:17 Çorlu/Tekirdağ</p>
+                        <p><a href="https://www.google.com/maps/place/Cebir+M%C3%BChendislik+Proje+ve+Y%C4%B1l%C4%B1m/@40.157375,26.424005,17z/data=!4m6!3m5!1s0x14b1073054c04131:0x89ffd9d607dbf2fc!8m2!3d40.157375!4d26.424005" target="_blank" style="color: inherit; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='inherit'">ESENLER MAH. ADNAN MENDERES CAD. NO: 2 /23 İÇ KAPI NO: 21 MERKEZ/ÇANAKKALE</a></p>
                     </div>
                     <!--
                     <div class="ai-agent">
@@ -220,7 +528,31 @@
         <p>İletişim: <a href="mailto:info@cebirproje.com">info@cebirproje.com</a></p>
         <p>&copy; 2025 CEBİR PROJE VE BİLİŞİM. Tüm hakları saklıdır.</p>
     </footer>
+<!-- Three.js Kütüphanesi -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- GLTFLoader -->
+    <script src="js/GLTFLoader.js"></script>
 
+    <!-- 3D Model Data URI -->
+    <script src="js/logo-model-datauri.js"></script>
+
+    <!-- 3D Logo Script -->
+    <script src="js/logo-3d.js"></script>
+    
+    <script>
+        // Optional: Additional check to make sure the loader is available
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof THREE !== 'undefined' && typeof THREE.GLTFLoader === 'undefined') {
+                console.error('GLTFLoader was not loaded properly');
+            } else if (typeof THREE !== 'undefined' && typeof THREE.GLTFLoader !== 'undefined') {
+                console.log('GLTFLoader is available');
+            } else {
+                console.error('Three.js is not loaded');
+            }
+        });
+    </script>
+    
     <script src="js/script.js"></script>
 </body>
 </html>
