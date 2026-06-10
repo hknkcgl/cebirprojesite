@@ -307,6 +307,29 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Toggle Comparison Table Accordion
+    const toggleComparisonBtn = document.getElementById('toggle-comparison-table');
+    const collapsibleTable = document.getElementById('collapsible-comparison-table');
+    
+    if (toggleComparisonBtn && collapsibleTable) {
+        toggleComparisonBtn.addEventListener('click', function() {
+            const isExpanded = collapsibleTable.classList.toggle('expanded');
+            this.classList.toggle('active');
+            this.setAttribute('aria-expanded', isExpanded);
+            
+            const btnText = this.querySelector('.btn-text');
+            const btnIcon = this.querySelector('.btn-icon');
+            
+            if (isExpanded) {
+                btnText.textContent = "Detaylı Karşılaştırmayı Gizle";
+                btnIcon.textContent = "▲";
+            } else {
+                btnText.textContent = "Detaylı Paket Karşılaştırma Tablosu";
+                btnIcon.textContent = "▼";
+            }
+        });
+    }
+
     // Mobile Hamburger Menu Toggle
     const hamburgerMenu = document.getElementById('hamburger-menu');
     const navMenu = document.querySelector('.nav-menu');

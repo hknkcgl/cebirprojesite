@@ -3,6 +3,7 @@
 User-agent: *
 Allow: /
 Disallow: /test-3d.html
+Disallow: /vcard.html
 Disallow: /images/temp/
 
 Sitemap: https://www.cebirproje.com/sitemap.xml
