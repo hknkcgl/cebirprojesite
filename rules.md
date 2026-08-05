@@ -59,3 +59,7 @@
 - Ensure all animations perform smoothly
 - Review accessibility compliance
 - Confirm responsive behavior meets requirements
+
+---
+
+## **Ortak Yapay Zeka Hafızası Mimarisi (`omnidesk-brain` MCP)**
