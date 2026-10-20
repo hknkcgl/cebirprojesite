@@ -6,7 +6,7 @@
 ,Google Search Console Kaydı,✔️,✔️,✔️,✔️,✔️,✔️
 ,Form & Satış Altyapısı,İletişim Formu,Teklif & Talep Formu,Teklif & Talep Formu,Teklif & Talep Formu,Teklif & Talep Formu,Gelişmiş Sepet & Sanal POS
 ,Google Haritalar Kurum Kaydı,❌,✔️,✔️,✔️,✔️,✔️
-,Veritabanı Altyapısı,❌,✔️ (Merkezi Supabase),✔️ (Merkezi Supabase),✔️ (İzole Kurulum),✔️,✔️ (ikas Altyapısı)
+,Veritabanı Altyapısı,❌,✔️ (MySQL),✔️ (MySQL),✔️ (İzole Kurulum),✔️,✔️ (ikas Altyapısı)
 ,Özel Müşteri Yönetim Paneli,❌,✔️ (Cebir CRM),✔️ (Cebir CRM),✔️ (İzole CRM),✔️,✔️ (ikas Paneli)
 ,Veri Dışa Aktarma (Excel/CSV),❌,✔️,✔️,✔️,✔️,✔️
 ,Google Ads Kampanya Kurulumu,❌,❌,✔️,❌,❌,❌ (Opsiyonel)
