@@ -1,22 +1,22 @@
 ,,,,,,,
-,Özellik / Hizmet Modeli,1. Dijital Kartvizit(Statik),2. Akıllı İşletme(KOBİ),3. Büyüme Odaklı(Dijital Pazarlama),4. Bağımsız Sunucu(Veri Benim),5. İnteraktif Vitrin(Özel 3D),6. Akıllı E-Ticaret(ikas Ortaklığı)
-,Sayfa Yapısı,Tek Sayfa (One-Page),Çoklu Sayfa,Çoklu Sayfa,İstek Doğrultusunda,Özel 3D / WebGL,Dinamik E-Ticaret
-,Mobil Uyumlu Tasarım,✔️,✔️,✔️,✔️,✔️,✔️
-,Domain & Hosting (1. Yıl),✔️ (Bizden),✔️ (Bizden),✔️ (Bizden),❌ (Müşteri Öder),✔️ (Bizden),✔️ (Bulut Altyapı)
-,Google Search Console Kaydı,✔️,✔️,✔️,✔️,✔️,✔️
-,Form & Satış Altyapısı,İletişim Formu,Teklif & Talep Formu,Teklif & Talep Formu,Teklif & Talep Formu,Teklif & Talep Formu,Gelişmiş Sepet & Sanal POS
-,Google Haritalar Kurum Kaydı,❌,✔️,✔️,✔️,✔️,✔️
-,Veritabanı Altyapısı,❌,✔️ (MySQL),✔️ (MySQL),✔️ (İzole Kurulum),✔️,✔️ (ikas Altyapısı)
-,Özel Müşteri Yönetim Paneli,❌,✔️ (Cebir CRM),✔️ (Cebir CRM),✔️ (İzole CRM),✔️,✔️ (ikas Paneli)
-,Veri Dışa Aktarma (Excel/CSV),❌,✔️,✔️,✔️,✔️,✔️
-,Google Ads Kampanya Kurulumu,❌,❌,✔️,❌,❌,❌ (Opsiyonel)
-,Aylık Reklam Optimizasyonu,❌,❌,✔️ (%10 Komisyon),❌,❌,❌ (Opsiyonel)
-,KVKK & Çerez Yönetimi,✔️ (Form Altı Checkbox),✔️ (Form Altı Checkbox),✔️ (Kapsamlı Pop-up),Paket İçeriğine Göre,✔️ (Kapsamlı Pop-up),✔️ (Kapsamlı Pop-up)
-,3D Model & WebGL Simülasyon,❌,❌,❌,❌,✔️,❌
-,Fiziksel Barkodlu Kartvizit,❌,✔️ (100 Adet Hediye),✔️ (100 Adet Hediye),✔️ (100 Adet Hediye),✔️ (100 Adet Hediye),❌
+,Özellik / Hizmet Modeli,1. Dijital Kartvizit(Statik),2. Akıllı İşletme(KOBİ),3. Büyüme Odaklı(Dijital Pazarlama),4. Bağımsız Sunucu(Veri Benim),5. İnteraktif Vitrin(Özel 3D)
+,Sayfa Yapısı,Tek Sayfa (One-Page),Çoklu Sayfa,Çoklu Sayfa,İstek Doğrultusunda,Özel 3D / WebGL
+,Mobil Uyumlu Tasarım,✔️,✔️,✔️,✔️,✔️
+,Domain & Hosting (1. Yıl),✔️ (Bizden),✔️ (Bizden),✔️ (Bizden),❌ (Müşteri Öder),✔️ (Bizden)
+,Google Search Console Kaydı,✔️,✔️,✔️,✔️,✔️
+,Form & Satış Altyapısı,İletişim Formu,Teklif & Talep Formu,Teklif & Talep Formu,Teklif & Talep Formu,Teklif & Talep Formu
+,Google Haritalar Kurum Kaydı,❌,✔️,✔️,✔️,✔️
+,Veritabanı Altyapısı,❌,✔️ (MySQL),✔️ (MySQL),✔️ (İzole Kurulum),✔️
+,Özel Müşteri Yönetim Paneli,❌,✔️ (Cebir CRM),✔️ (Cebir CRM),✔️ (İzole CRM),✔️
+,Veri Dışa Aktarma (Excel/CSV),❌,✔️,✔️,✔️,✔️
+,Google Ads Kampanya Kurulumu,❌,❌,✔️,❌,❌
+,Aylık Reklam Optimizasyonu,❌,❌,✔️ (%10 Komisyon),❌,❌
+,KVKK & Çerez Yönetimi,✔️ (Form Altı Checkbox),✔️ (Form Altı Checkbox),✔️ (Kapsamlı Pop-up),Paket İçeriğine Göre,✔️ (Kapsamlı Pop-up)
+,3D Model & WebGL Simülasyon,❌,❌,❌,❌,✔️
+,Fiziksel Barkodlu Kartvizit,❌,✔️ (100 Adet Hediye),✔️ (100 Adet Hediye),✔️ (100 Adet Hediye),✔️ (100 Adet Hediye)
 ,NET FİYAT (KDV Hariç),6.000 ₺,10.000 ₺,12.000 ₺,"Statik: 6.000 ₺
 
-Dinamik: 12.000 ₺",35.000 ₺ – 60.000 ₺+,20.000 ₺
+Dinamik: 12.000 ₺",35.000 ₺ – 60.000 ₺+
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
